@@ -5,7 +5,7 @@ body {
   .bg-black {
     background: #000;
   }
-  
+
   .card-project:hover {
     border: 1px solid #eee;
     cursor: pointer;

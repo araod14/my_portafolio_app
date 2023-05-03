@@ -22,7 +22,11 @@
       blanditiis? Eius ipsum quidem enim architecto fugiat porro inventore libero praesentium aperiam nulla
       exercitationem nemo soluta, culpa impedit est et doloribus ut necessitatibus odit, dicta voluptate! Vero ab nulla
       placeat.</p>
-    <a class="btn btn-primary btn-lg rounded-0 my-3" href="{% static 'portfolio/cv.pdf' %}">Download my CV</a>
+      <div class="social-icons text-end">
+        <a href="https://github.com/araod14" target="_blank"><img src="{% static 'portfolio/icons/icons8-github-48.png' %}" alt="Github" width="45" height="45"></a>
+        <a href="https://www.linkedin.com/in/daniel-arao-0b7618164/" target="_blank"><img src="{% static "portfolio/icons/icons8-linkedin-48.png" %}" alt="Twitter" width="45" height="45"></a>
+        <a href="https://twitter.com/AraoDev" target="_blank"><img src="{% static 'portfolio/icons/icons8-twitter-48.png' %}" alt="Linkenid" width="45" height="45"></a>
+      </div>
   </div>
 </header>
 
@@ -43,7 +47,7 @@
         <p>{{ project.description }}</p>
 
         {% if project.url %}
-        <a href="{{project.url}}" class="btn btn-light rounded-0 btn-sm" target="__blank" rel="noreferrer">Visit the
+        <a href="{{project.url}}" class="btn btn-secondary" target="__blank" rel="noreferrer" >Visit the
           Project</a>
         {% endif %}
       </div>
