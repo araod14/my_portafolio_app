@@ -1,0 +1,22 @@
+body {
+    background: #090909;
+}
+.badge-md {
+    font-size: 1.2rem;
+}
+.bg-black {
+    background: #000;
+}
+
+.card-project:hover {
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
