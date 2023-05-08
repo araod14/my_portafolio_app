@@ -2,7 +2,7 @@ asgiref==3.5.2
 autopep8==2.0.2
 backports.zoneinfo==0.2.1
 Brotli==1.0.9
-certifi @ file:///croot/certifi_1665076670883/work/certifi
+
 dj-database-url==2.0.0
 Django==4.1.2
 gunicorn==20.1.0
