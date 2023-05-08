@@ -1,0 +1,16 @@
+asgiref==3.5.2
+autopep8==2.0.2
+backports.zoneinfo==0.2.1
+Brotli==1.0.9
+certifi @ file:///croot/certifi_1665076670883/work/certifi
+dj-database-url==2.0.0
+Django==4.1.2
+gunicorn==20.1.0
+Pillow==9.5.0
+psycopg2==2.9.6
+psycopg2-binary==2.9.6
+pycodestyle==2.10.0
+sqlparse==0.4.3
+tomli==2.0.1
+typing_extensions==4.5.0
+whitenoise==6.4.0
