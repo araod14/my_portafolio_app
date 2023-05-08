@@ -9,7 +9,7 @@ __pycache__/
 # media files 
 media
 images
-dist
+
 
 ## virtual environment
 venv
