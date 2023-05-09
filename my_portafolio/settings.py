@@ -83,15 +83,20 @@ WSGI_APPLICATION = 'my_portafolio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
+
+if DEBUG:
+
+    DATABASES = {
     'default': dj_database_url.config(default= 'postgresql://danel149:danel@localhost/portfolio')
-        }
-#        'ENGINE': 'django.db.backends.postgresql',
- #       'NAME':'portfolio',
-  #      'USER': 'danel149',
-   #     'PASSWORD': 'danel',
-    #    'HOST': '127.0.0.1',
-     #   'PORT': '5432')
+    }
+
+if not DEBUG:
+
+    DATABASES = {
+    'default': dj_database_url.config(
+    default=os.environ.get('DATABASE_URL'),
+    )
+  }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -131,7 +136,7 @@ STATIC_URL = 'static/'
 #MEDIA_URL = '/images/'
 #MEDIA_URL = f'https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images/')
-MEDIA_URL = "/images/"
+#MEDIA_URL = "/images/"
 
 #MEDIA_ROOT=os.path.join(BASE_DIR,'/images/')
 
