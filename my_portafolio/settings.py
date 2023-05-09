@@ -128,9 +128,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
-MEDIA_URL = '/images/'
+#MEDIA_URL = '/images/'
+#MEDIA_URL = f'https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/'
+MEDIA_ROOT = BASE_DIR / "media"
+MEDIA_URL = "/public/"
 
-MEDIA_ROOT=os.path.join(BASE_DIR,'/images/')
+#MEDIA_ROOT=os.path.join(BASE_DIR,'/images/')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
