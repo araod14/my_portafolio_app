@@ -135,8 +135,8 @@ USE_TZ = True
 STATIC_URL = 'static/'
 #MEDIA_URL = '/images/'
 #MEDIA_URL = f'https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images/')
-MEDIA_URL = "/static/"
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/images/')
+MEDIA_URL = "/media/"
 
 #MEDIA_ROOT=os.path.join(BASE_DIR,'/images/')
 
