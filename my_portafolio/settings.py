@@ -136,7 +136,7 @@ STATIC_URL = 'static/'
 #MEDIA_URL = '/images/'
 #MEDIA_URL = f'https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/'
 #MEDIA_ROOT = os.path.join(BASE_DIR, 'media/images/')
-MEDIA_URL = "/images/"
+#MEDIA_URL = "/images/"
 
 #MEDIA_ROOT=os.path.join(BASE_DIR,'/images/')
 
