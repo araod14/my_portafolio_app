@@ -7,8 +7,6 @@ __pycache__/
 *.so
 
 # media files 
-media
-images
 
 
 ## virtual environment
