@@ -1,2 +1,3 @@
 # my_portafolio_app
- file:///home/danel149/Pictures/Screenshots/Screenshot%20from%202023-05-15%2020-58-46.png
+![Screenshot from 2023-05-15 20-58-46](https://github.com/araod14/my_portafolio_app/assets/99058835/04c03c2c-ed7c-4160-bfb6-f96750a6378c)
+
