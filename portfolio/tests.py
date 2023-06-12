@@ -65,3 +65,5 @@ class ProjectModelTest(TestCase):
         self.assertEqual(upload_to, 'portfolio/images')
 
 
+
+
