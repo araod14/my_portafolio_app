@@ -30,33 +30,216 @@
   <h3>Proyectos</h3>
   <p>Estos son algunos de mis proyectos, espero que los encuentres interesantes, siempre los estoy mejorando!</p>
 
-  {% for project in projects %}
+
   <div class="col-md-4 p-4">
     <div class="card bg-black card-project">
-      <img src="{{ project.image.url }}" class="card-img-top" />
-
+      <img src="{% static 'portfolio/proyectos/fastapi.png' %}" class="card-img-top" />
       <div class="card-body">
-
-        <h2>{{ project.title }}</h2>
+        <h2>CRUD APIREST Fastapi</h2>
         <div class="badge">
-          <h6><span class="badge bg-primary">{{ project.framework }}</span>
-          {% if project.database %}
-          <span class="badge bg-secondary">{{ project.database }}</span></h6>
-          {% endif %}
+          <h6><span class="badge bg-primary">Fastapi</span>
+          <span class="badge bg-secondary">Postgesql</span></h6>
         </div>
         <div class="text-start">
-          <p>{{ project.description }}</p>
+          <p>CRUD apirest con fastapi, cada usuario puede postear y borrar mensajes, cuenta con autentificacion y token JWT</p>
         </div>
         <div class="linkproject">
-          {% if project.url %}
-          <a href="{{project.url}}" class="btn btn-secondary" target="__blank" rel="noreferrer" >Visita el
+          <a href="https://github.com/araod14/Twitter_api_fastapi" class="btn btn-secondary" target="__blank" rel="noreferrer" >Visita el
             Proyecto</a>
-        {% endif %}
       </div>
       </div>
     </div>
   </div>
-  {% endfor %}
+
+
+  <div class="col-md-4 p-4">
+    <div class="card bg-black card-project">
+      <img src="{% static 'portfolio/proyectos/McCabe.png' %}" class="card-img-top" />
+      <div class="card-body">
+        <h2>McCabe-Thiele</h2>
+        <div class="badge">
+          <h6><span class="badge bg-primary">Jupyter-notebook</span>
+          <span class="badge bg-secondary">Matplotlib</span></h6>
+        </div>
+        <div class="text-start">
+          <p>Script que automatiza el metodo McCabe-Thile para determinar el numero de platos para una torre de destilacion bifasica, e imprime el numero de platos requeridos</p>
+        </div>
+        <div class="linkproject">
+          <a href="https://github.com/araod14/McCabe-Thiele" class="btn btn-secondary" target="__blank" rel="noreferrer" >Visita el
+            Proyecto</a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-md-4 p-4">
+    <div class="card bg-black card-project">
+      <img src="{% static 'portfolio/proyectos/hawaiconf.png' %}" class="card-img-top" />
+      <div class="card-body">
+        <h2>Frontend HawaiConf</h2>
+        <div class="badge">
+          <h6><span class="badge bg-primary">Bootstrap</span></h6>
+        </div>
+        <div class="text-start">
+          <p>Frontend realizado con html, css y bootstrap para la platziconf Hawaii</p>
+        </div>
+        <div class="linkproject">
+          <a href="https://araod14.github.io/hawaii_conf/" class="btn btn-secondary" target="__blank" rel="noreferrer" >Visita el
+            Proyecto</a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-md-4 p-4">
+    <div class="card bg-black card-project">
+      <img src="{% static 'portfolio/proyectos/edas.png' %}" class="card-img-top" />
+      <div class="card-body">
+        <h2>Analisis exploratorio de datos</h2>
+        <div class="badge">
+          <h6><span class="badge bg-primary">Jupyter-notebook</span>
+          <span class="badge bg-secondary">Seaborn</span>
+          </span></h6>
+        </div>
+        <div class="text-start">
+          <p>Diferentes datasets y analisis exploratorios de datos, realizado con pandas, seaborn y matplotlib</p>
+        </div>
+        <div class="linkproject">
+          <a href="https://github.com/araod14/EDAs" class="btn btn-secondary" target="__blank" rel="noreferrer" >Visita el
+            Proyecto</a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-md-4 p-4">
+    <div class="card bg-black card-project">
+      <img src="{% static 'portfolio/proyectos/separador.png' %}" class="card-img-top" />
+      <div class="card-body">
+        <h2>Script separador vertical</h2>
+        <div class="badge">
+          <h6><span class="badge bg-primary">Python</span></h6>
+        </div>
+        <div class="text-start">
+          <p>Script para el calculo del diseño de un separador vertical, se agrega los datos del liquido, gas requerido y el programa generara las dimensiones del separador vertical y el nivel de sus alarmas</p>
+        </div>
+        <div class="linkproject">
+          <a href="https://github.com/araod14/Separador_vertical" class="btn btn-secondary" target="__blank" rel="noreferrer" >Visita el
+            Proyecto</a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 p-4">
+    <div class="card bg-black card-project">
+      <img src="{% static 'portfolio/proyectos/djangorest.png' %}" class="card-img-top" />
+      <div class="card-body">
+        <h2>APIREST DjangoREST</h2>
+        <div class="badge">
+          <h6><span class="badge bg-primary">DjangoREST</span>
+          <span class="badge bg-secondary">SQLite</span>
+          </span></h6>
+        </div>
+        <div class="text-start">
+          <p>CRUD apirest con djangorest</p>
+        </div>
+        <div class="linkproject">
+          <a href="https://github.com/araod14/Djangorest_api" class="btn btn-secondary" target="__blank" rel="noreferrer" >Visita el
+            Proyecto</a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 p-4">
+    <div class="card bg-black card-project">
+      <img src="{% static 'portfolio/proyectos/pongame.png' %}" class="card-img-top" />
+      <div class="card-body">
+        <h2>Juego Pong</h2>
+        <div class="badge">
+          <h6><span class="badge bg-primary">Godot</span>
+          <span class="badge bg-secondary">Gdscript</span>
+          </span></h6>
+        </div>
+        <div class="text-start">
+          <p>Juego de pong creado con godot y gdscript, puedes probar el juego dando clic al boton en la parte superior de esta app</p>
+        </div>
+        <div class="linkproject">
+          <a href="https://github.com/araod14/platzipong" class="btn btn-secondary" target="__blank" rel="noreferrer" >Visita el
+            Proyecto</a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 p-4">
+    <div class="card bg-black card-project">
+      <img src="{% static 'portfolio/proyectos/quotestoscrape.png' %}" class="card-img-top" />
+      <div class="card-body">
+        <h2>Web scraping</h2>
+        <div class="badge">
+          <h6><span class="badge bg-primary">Scrapy</span>
+          <span class="badge bg-secondary">Playwritgh</span>
+          </span></h6>
+        </div>
+        <div class="text-start">
+          <p>Web scraping a la pagina "quotestocscrape" para obtener informacion y guardarl en un documento .txt, realizacon con scrapy y playwritgh</p>
+        </div>
+        <div class="linkproject">
+          <a href="https://github.com/araod14/tutorial_scrapy_playwrigth" class="btn btn-secondary" target="__blank" rel="noreferrer" >Visita el
+            Proyecto</a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 p-4">
+    <div class="card bg-black card-project">
+      <img src="{% static 'portfolio/proyectos/appportfolio.png' %}" class="card-img-top" />
+      <div class="card-body">
+        <h2>App Portfolio</h2>
+        <div class="badge">
+          <h6><span class="badge bg-primary">Django</span>
+          <span class="badge bg-secondary">Postgresql</span>
+          </span></h6>
+        </div>
+        <div class="text-start">
+          <p>App portafolio, la que estas usando actualmente, hecha con django y base de datos postgreql, tambien se integro con el juego de pong</p>
+        </div>
+        <div class="linkproject">
+          <a href="https://github.com/araod14/my_portafolio_app" class="btn btn-secondary" target="__blank" rel="noreferrer" >Visita el
+            Proyecto</a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-md-4 p-4">
+    <div class="card bg-black card-project">
+      <img src="{% static 'portfolio/proyectos/linearregresion.png' %}" class="card-img-top" />
+      <div class="card-body">
+        <h2>Regresion Lineal</h2>
+        <div class="badge">
+          <h6><span class="badge bg-primary">Jupyter-Notebook</span>
+          <span class="badge bg-secondary">Sklearn</span>
+          </span></h6>
+        </div>
+        <div class="text-start">
+          <p>Regresion lineal para estimar gastos medicos segun caracteristicas de la persona, a tratar. Machine Learning</p>
+        </div>
+        <div class="linkproject">
+          <a href="https://github.com/araod14/medical_lost_regresionlineal" class="btn btn-secondary" target="__blank" rel="noreferrer" >Visita el
+            Proyecto</a>
+      </div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
     
